@@ -4,28 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imdiego.dev</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 700px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
+    <title>Imdiego.dev</title>
 </head>
 <body>
     <header>
-        <img src="https://portfoliodiegodev.s3.amazonaws.com/logov4.png">
-        <div class="header-burguer-menu">
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+        <nav>
+            <div>
+                <img src="https://portfoliodiegodev.s3.amazonaws.com/logov4.png" class="logo">
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fa fa-bars" id="burguer"></i>
+            </label>
+            <ul class="nav-menu" id="myTopnav">
+                <li><a href="https://drive.google.com/file/d/13IXwhFHLCUlPl21ZZ1uEhpUUADsMIC_7/view" target="_blank">CV</a></li>
+                <li><a href="https://diego-naranjo.super.site/blog" target="_blank">Blog</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
-            <h2>Hello wolrd</h2>
+            <div class="header--title-container">
+                <img>
+                <h1>Hello There!.
+                    <br>
+                    I'm a Programmer
+                </h1>
+            </div>
             <button onclick="message()">My message</button>
         </section>
         <section>
