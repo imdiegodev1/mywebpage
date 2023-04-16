@@ -6,18 +6,20 @@
 }
 
 * {
-  box-sizing: Bahnschrift SemiBold;
+  /*font-family: Bahnschrift SemiBold;*/
   margin: 0;
   padding: 0;
-  background-color: var(--bone-white);
+  /**background-color: var(--bone-white);**/
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
 }
 
+/**Header!!**/
+
 html {
   font-size: 62.5%;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Bahnschrift SemiBold';
 }
 
 header {
@@ -25,7 +27,7 @@ header {
   min-width: 320px;
   max-width: 1080px;
   margin: auto;
-  background-color: var(--bone-white);
+  background-color: white;
 }
 
 nav {
@@ -37,7 +39,7 @@ nav {
 }
 
 .logo {
-  width: 100px;
+  width: 80px;
   margin-left: 10px;
 }
 
@@ -60,9 +62,9 @@ nav {
 
 .nav-menu li {
   display: none;
-  line-height: 30px;
-  margin: 50px 0;
-  transition: all .5s;
+  line-height: 25px;
+  margin: 25px 0;
+  transition: all .1s;
   background-color: var(--green);
 }
 
@@ -83,10 +85,105 @@ nav {
 }
 
 #check:checked ~ .nav-menu {
-  height: 100vh;
+  height: 20vh;
 }
 
 #check:checked ~ .nav-menu li {
   display: block;
 }
 
+/**Main Content!**/
+
+main {
+  padding: 15px;
+  min-width: 320px;
+  max-width: 1080px;
+  margin: auto;
+}
+
+/**Section 1**/
+
+.greeting-container{
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: white;
+}
+
+.greeting-container img {
+  border-radius: 5px;
+  width: 200px;
+  height: 280px;
+}
+
+.greeting-container .header--title-container h3 {
+  font-size: 30px;
+  font-family: komu-a, sans-serif;
+  font-style: normal;
+  color: var(--soft-orange);
+}
+
+.greeting-container .header--title-container h1 {
+  font-size: 30px;
+  font-family: komu-a, sans-serif;
+  font-style: normal;
+  color: white;
+  background-color: var(--dark-blue);
+}
+
+/**Section 2**/
+
+.my-expirience {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: var(--dark-blue);
+}
+
+/**Section 3**/
+
+.main-projects {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: var(--soft-orange);
+}
+
+/**Section 4**/
+
+.skills-education {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: var(--bone-white);
+}
+
+/**Section 5**/
+
+.reach-me {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: var(--dark-blue);
+}
+
+/**Footer**/
+
+footer {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: var(--soft-orange);
+}
