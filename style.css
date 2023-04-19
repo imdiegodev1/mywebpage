@@ -111,29 +111,94 @@ main {
 .greeting-container{
   width: 100%;
   height: auto;
-  padding-top: 80px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   background-color: white;
 }
 
+.figure-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+}
+
+figure {
+  position: relative;
+  display: flex;
+}
+
 .greeting-container img {
+  position: relative;
   border-radius: 5px;
   width: 200px;
   height: 280px;
 }
 
+figcaption {
+  padding: 0 4%;
+  z-index: 2;
+  margin-top: 17px;
+  padding-right: 0;
+  padding-left: 10px;
+  min-width: 113px;
+  width: 40%;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+  display: block;
+}
+
+.greeting-container .header--title-container {
+  position: absolute;
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  margin-top: calc(-1em - 0%);
+  padding: 0;
+
+}
+
 .greeting-container .header--title-container h3 {
+  position: absolute;
+  display: block;
+  left: -5px;
   font-size: 30px;
   font-style: normal;
   color: var(--soft-orange);
 }
 
-.greeting-container .header--title-container h1 {
+.greeting-container .header--title-container em {
   font-size: 30px;
+  font-style: normal;
+  color: var(--soft-orange);
+  margin: 0;
+}
+
+.greeting-container .header--name {
+  position: absolute;
+  display: block;
+  left: -35px;
+  top: 45px;
+}
+
+.greeting-container .header--title-container h1 {
+  margin-top: 10px;
+  font-size: 45px;
   font-style: normal;
   color: white;
   background-color: var(--dark-blue);
+  font-weight: normal;
+}
+
+.greeting-container .header--description {
+  text-align: left;
+}
+
+.greeting-container .header--description p {
+  font-size: 15px;
 }
 
 /**Section 2**/
