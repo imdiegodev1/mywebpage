@@ -28,7 +28,7 @@ html {
 }
 
 header {
-  padding: 15px;
+  /*padding: 15px;*/
   min-width: 320px;
   max-width: 1080px;
   margin: auto;
@@ -49,39 +49,61 @@ nav {
 }
 
 .bar-btn {
-  font-size: 25px;
+  /*font-size: 25px;
   color: var(--dark-blue);
   margin-right: 20px;
-  cursor: pointer;
+  cursor: pointer;*/
+  display: none;
 }
 
 .nav-menu {
-  position: fixed;
+  /*position: fixed;
   width: 100%;
+  max-width: 320px;
   height: 0vh;
   top: 100px;
   background-color: var(--green);
   text-align: center;
-  transition: all .5s;
+  transition: all .5s;*/
+  position: relative;
+  height: 100px;
+  top: 0;
+  background: none;
+  transition: none;
+  text-align: right;
+  margin-right: 5px;
 }
 
 .nav-menu li {
-  display: none;
+  /*display: none;
   line-height: 25px;
   margin: 25px 0;
   transition: all .1s;
-  background-color: var(--green);
+  background-color: var(--green);*/
+  display: inline-block;
+  line-height: 100px;
+  margin: 0 10px;
+  transition: none;
+  background-color: white;
 }
 
 .nav-menu li a {
-  color: var(--dark-blue);
+  /**color: var(--dark-blue);
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 600;
-  background-color: var(--green);
+  background-color: var(--green);**/
+  font-size: 20px;
+  background-color: white;
 }
 
-.nav-menu li a:hover {
+.nav-menu li:hover, .nav-menu li a:hover {
+  font-size: 30px;
+  color: var(--green);
+  transition: all .3s;
+}
+
+/*.nav-menu li a:hover {
   color: var(--bone-white);
 }
 
@@ -95,15 +117,14 @@ nav {
 
 #check:checked ~ .nav-menu li {
   display: block;
-}
+}*/
 
 /**Main Content!**/
 
 main {
-  padding: 15px;
-  min-width: 320px;
-  max-width: 1080px;
-  margin: auto;
+  width: 100%;
+  min-height: 320px;
+  height: auto;
 }
 
 /**Section 1**/
@@ -111,8 +132,9 @@ main {
 .greeting-container{
   width: 100%;
   height: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  /*padding-top: 10px;
+  padding-bottom: 10px;*/
+  padding: 10px;
   text-align: center;
   background-color: white;
 }
@@ -231,7 +253,7 @@ figcaption {
   padding-top: 80px;
   padding-bottom: 30px;
   text-align: center;
-  background-color: var(--bone-white);
+  background-color: white;
 }
 
 /**Section 5**/
@@ -242,7 +264,7 @@ figcaption {
   padding-top: 80px;
   padding-bottom: 30px;
   text-align: center;
-  background-color: var(--dark-blue);
+  background-color: white;
 }
 
 /**Footer**/
@@ -250,8 +272,13 @@ figcaption {
 footer {
   width: 100%;
   height: auto;
-  padding-top: 80px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
-  background-color: var(--soft-orange);
+  background-color: var(--dark-blue);
+}
+
+.footer-container img {
+  width: 300px;
+  height: 300px;
 }
