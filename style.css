@@ -48,23 +48,7 @@ nav {
   margin-left: 10px;
 }
 
-.bar-btn {
-  /*font-size: 25px;
-  color: var(--dark-blue);
-  margin-right: 20px;
-  cursor: pointer;*/
-  display: none;
-}
-
 .nav-menu {
-  /*position: fixed;
-  width: 100%;
-  max-width: 320px;
-  height: 0vh;
-  top: 100px;
-  background-color: var(--green);
-  text-align: center;
-  transition: all .5s;*/
   position: relative;
   height: 100px;
   top: 0;
@@ -75,11 +59,6 @@ nav {
 }
 
 .nav-menu li {
-  /*display: none;
-  line-height: 25px;
-  margin: 25px 0;
-  transition: all .1s;
-  background-color: var(--green);*/
   display: inline-block;
   line-height: 100px;
   margin: 0 10px;
@@ -88,11 +67,6 @@ nav {
 }
 
 .nav-menu li a {
-  /**color: var(--dark-blue);
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 600;
-  background-color: var(--green);**/
   font-size: 20px;
   background-color: white;
 }
@@ -102,22 +76,6 @@ nav {
   color: var(--green);
   transition: all .3s;
 }
-
-/*.nav-menu li a:hover {
-  color: var(--bone-white);
-}
-
-#check {
-  display: none;
-}
-
-#check:checked ~ .nav-menu {
-  height: 20vh;
-}
-
-#check:checked ~ .nav-menu li {
-  display: block;
-}*/
 
 /**Main Content!**/
 
