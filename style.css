@@ -90,8 +90,6 @@ main {
 .greeting-container{
   width: 100%;
   height: auto;
-  /*padding-top: 10px;
-  padding-bottom: 10px;*/
   padding: 10px;
   text-align: center;
   background-color: white;
@@ -186,7 +184,7 @@ figcaption {
 
 .my-expirience {
   width: 100%;
-  height: auto;
+  /*height: auto;*/
   padding-top: 80px;
   padding-bottom: 30px;
   text-align: center;
@@ -197,11 +195,90 @@ figcaption {
 
 .main-projects {
   width: 100%;
-  height: auto;
-  padding-top: 80px;
-  padding-bottom: 30px;
+  min-width: 320px;
+  padding-bottom: 70px;
   text-align: center;
   background-color: var(--soft-orange);
+}
+
+.main-project-title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main-project-title h2 {
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+
+.project-container--slider {
+  display: flex;
+    gap: 30px;
+    height: 320px;
+    max-width: 900px;
+    min-width: 320px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin: 0 auto;
+}
+
+.project-container--card {
+  position: relative;
+  /*Etiqueta para centrar la tarjeta cada que cambio 
+  entre ellas*/
+  scroll-snap-align: center;
+  width: 70%;
+  min-width: 190px;
+  max-width: 900px;
+  height: 250px;
+  margin: 50px 5px 0;
+  padding: 0 15px;
+  background-color: var(--bone-white);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.project-card--title {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--dark-blue);
+}
+
+.project-stack {
+  padding: 5px 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 5.3rem;
+  color: var(--dark-blue);
+}
+
+.project-description {
+  font-size: 15px;
+  color: #757575;
+}
+
+.project-card--ca {
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  background-color: #faf8f7;
+  border: 2px solid var(--dark-blue);
+  border-radius: 4px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--black);
 }
 
 /**Section 4**/
@@ -239,7 +316,7 @@ footer {
 
 .footer-container img {
   width: 300px;
-  height: 300px;
+  height: 200px;
 }
 
 footer p {
