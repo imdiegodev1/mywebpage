@@ -184,7 +184,6 @@ figcaption {
 
 .my-expirience {
   width: 100%;
-  /*height: auto;*/
   padding-top: 80px;
   padding-bottom: 30px;
   text-align: center;
@@ -232,8 +231,6 @@ figcaption {
 
 .project-container--card {
   position: relative;
-  /*Etiqueta para centrar la tarjeta cada que cambio 
-  entre ellas*/
   scroll-snap-align: center;
   width: 70%;
   min-width: 190px;
