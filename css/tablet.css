@@ -1,3 +1,10 @@
+:root{
+  --dark-blue: #24242c;
+  --soft-orange: #e15638;
+  --bone-white: #fefaec;
+  --green: #6bc792;
+}
+
 .logo {
     width: 100px;
     margin-left: 50px;
@@ -126,7 +133,7 @@ figcaption {
 .greeting-container .header--description {
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
+  width: 900px;
   padding: 10px;
 }
   
@@ -134,6 +141,59 @@ figcaption {
   text-align: left;
   font-size: 20px;
   font-family: sans-serif;
+}
+
+/**Section 2**/
+.my-expirience-detail {
+  display: flex;
+  flex-wrap: wrap;
+  width: 930px;
+  margin: 0 auto;
+}
+
+.expirience-detail--card {
+  width: 90%;
+  /**min-width: 288px;
+  max-width: 400px;
+  min-height: 70px;**/
+  width: 250px;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 10px 15px rgba(0,0,0, 0.16);
+}
+
+.expirience-detail--card:hover i {
+  display: none;
+}
+
+.expirience-detail--card:hover p {
+  font-size: 23px;
+}
+
+.expirience-detail--card:hover ul{
+  display: block;
+  color: var(--bone-white);
+  font-size: 15px;
+}
+
+
+/**Section 3**/
+
+.project-container--slider {
+  display: flex;
+    gap: 30px;
+    height: 350px;
+    max-width: 900px;
+    min-width: 320px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 45px;
 }
 
 

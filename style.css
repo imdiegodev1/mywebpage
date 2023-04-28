@@ -184,10 +184,74 @@ figcaption {
 
 .my-expirience {
   width: 100%;
-  padding-top: 80px;
-  padding-bottom: 30px;
+  min-width: 320px;
+  padding-top: 30px;
+  padding-bottom: 70px;
   text-align: center;
   background-color: var(--dark-blue);
+}
+
+.my-expirience-container {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.my-expirience-container h2 {
+  margin-top: 25px;
+  font-size: 30px;
+  line-height: 2.6rem;
+  font-weight: bold;
+  color: var(--bone-white);
+}
+
+.my-expirience-container p {
+  margin-top: 25px;
+  font-size: 15px;
+  line-height: 2.6rem;
+  color: var(--soft-orange);
+}
+
+.my-expirience-detail {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 00px 10px;
+}
+
+.my-expirience-detail {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.expirience-detail--card {
+  width: 90%;
+  width: 130px;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 10px 15px rgba(0,0,0, 0.16);
+}
+
+.expirience-detail--card i {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--bone-white);
+  font-size: 60px;
+}
+
+.expirience-detail--card p {
+  padding-bottom: 20px;
+  color: var(--bone-white);
+  font-size: 15px;
 }
 
 /**Section 3**/
@@ -242,7 +306,7 @@ figcaption {
   padding: 0 15px;
   background-color: var(--bone-white);
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+  box-shadow: 0 10px 15px rgba(89, 73, 30, 0.5);
 }
 
 .project-card--title {
@@ -278,6 +342,10 @@ figcaption {
   font-weight: bold;
   line-height: 1.8rem;
   color: var(--black);
+}
+
+.expirience-detail--card ul {
+  display: none;
 }
 
 /**Section 4**/
