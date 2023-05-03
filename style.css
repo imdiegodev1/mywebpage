@@ -352,22 +352,86 @@ figcaption {
 
 .skills-education {
   width: 100%;
-  height: auto;
-  padding-top: 80px;
-  padding-bottom: 30px;
+  min-width: 320px;
+  padding-bottom: 70px;
   text-align: center;
   background-color: white;
 }
 
-/**Section 5**/
-
-.reach-me {
-  width: 100%;
+.main-skills-title {
+  width: 90%;
+  min-width: 288px;
   height: auto;
-  padding-top: 80px;
-  padding-bottom: 30px;
+  margin: 0 auto;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main-skills-tittle h2 {
+  margin-top: 60px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+
+.education-skills-description {
+  padding-top: 20px;
+  text-align: justify;
+}
+
+.education-skills-description {
   text-align: center;
-  background-color: white;
+}
+
+.education-skills-description img{
+  text-align: center;
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+.education-skills-description div {
+  padding-bottom: 15px;
+  font-size: 15px;
+
+}
+
+/*Slider*/
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0)
+  }
+  100%{
+    transform: translateX(calc(-50px * 7))
+  }
+}
+
+.companies-slider {
+  height: 110px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.slider-track {
+  animation: scroll 5s linear infinite;
+  display: flex;
+  /**width: calc(250px*14);**/
+}
+
+.slide {
+  height: 105px;
+  width: 200px;
+}
+
+.slide img {
+  height: 100px;
+  width: 100px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 /**Footer**/

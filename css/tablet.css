@@ -184,16 +184,27 @@ figcaption {
 
 .project-container--slider {
   display: flex;
-    gap: 30px;
-    height: 350px;
-    max-width: 900px;
-    min-width: 320px;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    margin: 0 auto;
-    padding-left: 80px;
-    padding-right: 45px;
+  gap: 30px;
+  height: 350px;
+  max-width: 900px;
+  min-width: 320px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 45px;
+}
+
+/**Section 4**/
+.skills-education {
+  width: 100%;
+  max-width: 900px;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
 }
 
 
