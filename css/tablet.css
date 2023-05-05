@@ -214,6 +214,12 @@ figcaption {
   background-color: white;
 }
 
+/**slider**/
+
+.companies-slider {
+  max-width: 400px;
+}
+
 
 /**Footer**/
 
